@@ -12,7 +12,7 @@ import { MdLocationOn } from "react-icons/md";
 const Footer = () => {
   return (
     <div className="bg-black text-[#949494] py-20 font-titleFont">
-      <div className="max-w-screen-xl mx-auto grid grid-cols-4">
+      <div className="max-w-screen-xl mx-auto grid p-4 gap-5 lg:grid-cols-4 grid-cols-1">
         <div className="flex flex-col gap-7">
           <img className="w-32" src={darkLogo} alt="logoLight" />
           <p className=" Itext-white text-sm tracking-wide">© ReactBD.com</p>
