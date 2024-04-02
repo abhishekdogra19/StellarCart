@@ -72,7 +72,7 @@ const Login = () => {
   };
   return (
     <div className="w-ful flex flex-col items-center justify-center gap-10 py-20 ">
-      <div className="w-full flex items-center justify-center gap-10">
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-1 lg:gap-10">
         <div
           onClick={handleGoogleLogin}
           className="text-baase w-60 h-12 tracking-wide border-[1px] border-gray-400 rounded-md flex items-center justify-center gap-2 hover:border-blue-600 cursor-pointer duration-300"
@@ -83,12 +83,13 @@ const Login = () => {
         <button
           onClick={handleSignOut}
           className="bg-black text-white text-base py-3 px-8 tracking-wide
-            rounded-md hover:bg-gray-800 duration-300"
+            rounded-md hover:bg-gray-800 duration-300 w-60"
         >
           Sign Out
         </button>
       </div>
-      <div className="w-full flex items-center justify-center gap-10">
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-1 lg:gap-10">
+        {" "}
         <div
           onClick={handleGithubLogin}
           className="text-baase w-60 h-12 tracking-wide border-[1px] border-gray-400 rounded-md flex items-center justify-center gap-2 hover:border-blue-600 cursor-pointer duration-300"
@@ -99,7 +100,7 @@ const Login = () => {
         <button
           onClick={handleSignOut}
           className="bg-black text-white text-base py-3 px-8 tracking-wide
-            rounded-md hover:bg-gray-800 duration-300"
+            rounded-md hover:bg-gray-800 duration-300 w-60"
         >
           Sign Out
         </button>
