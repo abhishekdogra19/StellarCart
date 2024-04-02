@@ -35,12 +35,12 @@ const Header = () => {
             <div className="relative">
               <img className="w-10" src={shoppingBag} alt="" />
               {/*//! Some Changes */}
-              <span className="absolute w-10 top-2 left-0 text-xl flex items-center justify-center font-semibold font-titleFont">
+              <span className="absolute w-10 top-4 left-0 lg:top-2 lg:left-0 text-xs lg:text-xl flex items-center justify-center font-semibold font-titleFont">
                 {productData.length}
               </span>
             </div>
           </Link>
-          <Link to={"/login"}>
+          <Link className="flex gap-1 items-center p-1" to={"/login"}>
             <img
               src={
                 userInfo
@@ -48,14 +48,14 @@ const Header = () => {
                   : "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               }
               alt="userLogo"
-              className="w-10 h-10 rounded-full object-cover "
+              className="w-6 h-6 lg:w-10 lg:h-10 rounded-full object-cover "
             />
+            {userInfo && (
+              <p className="text-xs font-titleFont font-semibold underline underline-offset-2">
+                {userInfo.name}
+              </p>
+            )}
           </Link>
-          {userInfo && (
-            <p className="text-base font-titleFont font-semibold underline underline-offset-2">
-              {userInfo.name}
-            </p>
-          )}
         </div>
       </div>
     </div>
