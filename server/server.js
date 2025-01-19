@@ -7,7 +7,7 @@ require("dotenv").config();
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:4000",
-  "https://stellarcart-dmtu.onrender.com",
+  "https://stellarcart-cm09.onrender.com",
 ];
 
 const corsOptions = {
